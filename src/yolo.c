@@ -10,19 +10,23 @@
 #endif
 
 /* Change class number here */
-#define CLASSNUM 2
+define CLASSNUM 59
 
 /* Change class names here */
-char *voc_names[] = {"stopsign", "yeildsign"};
-image voc_labels[CLASSNUM];
+classes = ['ananas', 'anguria',	'arancia', 'asparagi', 'banana', 'broccolo', 'burro', 'carciofo', 'carote', 'cavolfiore', 'ceci',
+          'cipolla', 'coca cola', 'fagioli', 'farina', 'finocchio', 'fragola', 'funghi', 'gamberetti', 'hamburger', 'insalata', 'kiwi', 
+           'latte', 'lenticchie', 'limone', 'maionese', 'mais', 'mela', 'melanzana', 'mozzarella', 'noci', 'nutella', 'olio', 'olive',
+           'pancarre', 'pancetta', 'pane', 'pasta', 'patate', 'peperoni', 'pera', 'pesto', 'piselli', 'pollo', 'polpo', 'pomodoro', 'porro', 
+           'prosciutto cotto', 'riso', 'salame', 'salmone', 'salsiccia', 'tonno in scatola', 'uova', 'vitello', 'wurstel', 'yogurt', 'zucca', 'zucchina']
+
 
 void train_yolo(char *cfgfile, char *weightfile)
 {
     /* Change training folders here */
-    char *train_images = "BBoxLabelTool/train.txt";
+    char *train_images = "training_list.txt";
 
     /* Change output weight folders here */
-    char *backup_directory = "/u03/Guanghan/dev/darknet-master/backup/";
+    char *backup_directory = "/martinalutto/Food-in-the-fridge/";
 
     srand(time(0));
     data_seed = time(0);
