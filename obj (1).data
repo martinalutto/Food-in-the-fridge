@@ -1,5 +1,5 @@
 classes = 59
-train = /content/gdrive/My\ Drive/darknet/training_list.txt
-valid = /content/gdrive/My\ Drive/darknet/training_list.txt
-names = /content/gdrive/My\ Drive/darknet/obj.names
-backup = backup/
+train = build/darknet/x64/data/training_list.txt
+valid = build/darknet/x64/data/training_list.txt
+names = build/darknet/x64/data/obj.names
+backup = build/darknet/x64/backup/
