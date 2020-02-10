@@ -1,0 +1,4 @@
+classes = 1
+train = build/darknet/x64/data/list.txt
+valid = build/darknet/x64/data/list.txt
+backup = build/darknet/x64/backup/
